@@ -1,0 +1,43 @@
+        /* ---------- Pipeline Flow in About page ---------- */
+        .pipeline {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .pipe-step {
+            flex: 1 1 200px;
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+        }
+
+        .pipe-num {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: var(--ac);
+            color: #fff;
+            display: grid;
+            place-items: center;
+            font-weight: 700;
+            font-size: 14px;
+            flex: none;
+        }
+
+        .pipe-sep {
+            color: var(--mu);
+            font-size: 20px;
+            font-weight: bold;
+            display: grid;
+            place-items: center;
+        }
+
+        @media(max-width: 768px) {
+            .pipe-sep {
+                display: none;
+            }
+        }
+

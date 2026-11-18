@@ -1,0 +1,105 @@
+        /* ---------- Issue 5: Unified Academic Typography Scale ---------- */
+        h1 {
+            font-size: 26px !important;
+            font-weight: 800 !important;
+            line-height: 1.3 !important;
+            letter-spacing: -0.025em !important;
+            color: var(--tx) !important;
+            margin: 0 0 12px !important;
+            text-wrap: balance !important;
+            overflow-wrap: break-word !important;
+        }
+
+        h2 {
+            font-size: 20px !important;
+            font-weight: 700 !important;
+            line-height: 1.35 !important;
+            letter-spacing: -0.015em !important;
+            color: var(--tx) !important;
+            margin: 28px 0 12px !important;
+            text-wrap: balance !important;
+            overflow-wrap: break-word !important;
+        }
+
+        h3 {
+            font-size: 16px !important;
+            font-weight: 700 !important;
+            line-height: 1.4 !important;
+            letter-spacing: -0.01em !important;
+            color: var(--tx) !important;
+            margin: 0 0 8px !important;
+            text-wrap: balance !important;
+            overflow-wrap: break-word !important;
+        }
+
+        h4 {
+            font-size: 13.5px !important;
+            font-weight: 700 !important;
+            line-height: 1.4 !important;
+            color: var(--mu) !important;
+            text-transform: uppercase !important;
+            letter-spacing: 0.5px !important;
+            margin: 0 0 10px !important;
+        }
+
+        p,
+        ul,
+        ol {
+            font-size: 14.5px;
+            line-height: 1.6;
+            margin: 0 0 12px;
+            overflow-wrap: break-word;
+        }
+
+        p,
+        .card p,
+        .hero p,
+        .alg-desc,
+        .pipe-step p,
+        .faq-item p,
+        .sc-desc {
+            text-align: left;
+        }
+
+        .fc p {
+            text-align: center;
+        }
+
+        .mu {
+            font-size: 13px !important;
+            line-height: 1.5 !important;
+            color: var(--mu) !important;
+        }
+
+        .note {
+            font-size: 12.5px !important;
+            line-height: 1.5 !important;
+            color: var(--mu) !important;
+        }
+
+        table {
+            font-size: 13.5px;
+            width: 100%;
+        }
+
+        th {
+            font-size: 13px;
+            font-weight: 700;
+            padding: 10px 14px;
+            color: var(--tx);
+        }
+
+        td {
+            font-size: 13.5px;
+            line-height: 1.5;
+            padding: 10px 14px;
+        }
+
+        button,
+        input,
+        select,
+        textarea {
+            font-family: inherit;
+            font-size: 13.5px;
+        }
+

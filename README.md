@@ -243,7 +243,7 @@ Lưu ý: Không tự ý thay đổi thứ tự nạp các tệp JavaScript và C
 Clone repository:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/ChjBE/SPU_Scheduling.git
 ```
 
 Di chuyển vào thư mục dự án:
@@ -374,4 +374,5 @@ Khi chỉnh sửa mã nguồn, cần đảm bảo không làm ảnh hưởng đ�
 ---
 
 _CPU Scheduling Simulator – Trực quan hóa và khám phá nguyên lý điều phối CPU trong hệ điều hành._
+
 # SPU_Scheduling

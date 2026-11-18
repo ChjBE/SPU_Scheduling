@@ -1,0 +1,292 @@
+        /* ---------- Contact Page Layout ---------- */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr);
+            gap: 22px;
+            align-items: start;
+        }
+
+        @media(max-width: 860px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+
+        @media(max-width: 580px) {
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .faq-list {
+            display: grid;
+            gap: 10px;
+        }
+
+        .faq-item {
+            background: var(--bg);
+            border: 1px solid var(--bd);
+            border-radius: 8px;
+            padding: 10px 14px;
+            font-size: 13px;
+        }
+
+        .faq-item b {
+            display: block;
+            margin-bottom: 4px;
+            color: var(--tx);
+        }
+
+        .faq-item p {
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        /* ---------- Validation, Toast & Contact form (bổ sung) ---------- */
+        input.bad,
+        select.bad,
+        textarea.bad {
+            border-color: var(--er) !important;
+            box-shadow: 0 0 0 3px rgba(196, 43, 28, .12);
+        }
+
+        #toast {
+            position: fixed;
+            left: 50%;
+            bottom: 24px;
+            transform: translate(-50%, 20px);
+            max-width: min(92vw, 560px);
+            padding: 11px 18px;
+            border-radius: 10px;
+            background: var(--tx);
+            color: #fff;
+            font-size: 13.5px;
+            line-height: 1.45;
+            box-shadow: 0 8px 28px rgba(15, 30, 61, .28);
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity .2s, transform .2s;
+            z-index: 9999;
+        }
+
+        #toast.show {
+            opacity: 1;
+            transform: translate(-50%, 0);
+        }
+
+        #toast.err {
+            background: var(--er);
+        }
+
+        #toast.ok {
+            background: var(--ok);
+        }
+
+        .hero.contact-hero {
+            grid-template-columns: minmax(0, 1fr);
+            padding: 44px 48px;
+            background: radial-gradient(70% 140% at 100% 80%, rgba(56, 140, 215, .75), transparent 70%), linear-gradient(120deg, #1f3a85, #2f62b1 60%, #3a82c4);
+        }
+
+        .contact-hero p {
+            max-width: 760px;
+            margin: 0;
+            font-size: 17px;
+            line-height: 1.65;
+        }
+
+        .ct-card {
+            padding: 24px 26px;
+            border-radius: 18px;
+        }
+
+        .ct-card h3 {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 0 0 12px;
+            font-size: 18px;
+        }
+
+        .ct-card h3 .i {
+            flex: none;
+        }
+
+        .ct-info p {
+            margin: 0 0 6px;
+            font-size: 14.5px;
+            line-height: 1.65;
+            color: var(--mu);
+        }
+
+        .ct-info p b {
+            color: var(--mu);
+        }
+
+        .ct-left {
+            display: grid;
+            gap: 22px;
+        }
+
+        .ct-form {
+            display: grid;
+            gap: 16px;
+            margin-top: 18px;
+        }
+
+        .fld {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            min-width: 0;
+        }
+
+        .fld label {
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .fld label i {
+            color: var(--er);
+            font-style: normal;
+            margin-left: 2px;
+        }
+
+        .fld input,
+        .fld select,
+        .fld textarea {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 11px 14px;
+            border-radius: 10px;
+            font-size: 14.5px;
+            transition: border-color .15s, box-shadow .15s, background .15s;
+        }
+
+        .fld input::placeholder,
+        .fld textarea::placeholder {
+            color: #9aa5ba;
+        }
+
+        .fld input:hover,
+        .fld select:hover,
+        .fld textarea:hover {
+            border-color: #b9c6e0;
+        }
+
+        .fld input:focus,
+        .fld select:focus,
+        .fld textarea:focus {
+            border-color: var(--ac);
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, .15);
+            outline: none;
+        }
+
+        .fld textarea {
+            min-height: 170px;
+            resize: vertical;
+            line-height: 1.55;
+        }
+
+        .fld .ferr {
+            color: var(--er);
+            font-size: 12.5px;
+            line-height: 1.4;
+            margin: 0;
+            min-height: 0;
+        }
+
+        .fld .fcount {
+            align-self: flex-end;
+            font-size: 12px;
+            color: var(--mu);
+        }
+
+        .hp-wrap {
+            position: absolute !important;
+            left: -9999px !important;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+        }
+
+        .ct-submit {
+            width: 100%;
+            padding: 13px 18px;
+            font-size: 15px;
+            border-radius: 10px;
+            transition: filter .15s, transform .1s, box-shadow .15s;
+        }
+
+        .ct-submit:hover:not(:disabled) {
+            box-shadow: 0 6px 18px rgba(37, 99, 235, .3);
+        }
+
+        .ct-submit:active:not(:disabled) {
+            transform: translateY(1px);
+        }
+
+        .ct-submit:disabled {
+            opacity: .75;
+            cursor: not-allowed;
+        }
+
+        .spin {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            border: 2px solid rgba(255, 255, 255, .45);
+            border-top-color: #fff;
+            animation: spin .7s linear infinite;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .ct-status {
+            margin: 0;
+            padding: 0;
+            font-size: 13.5px;
+            line-height: 1.5;
+        }
+
+        .ct-status.ok,
+        .ct-status.err {
+            padding: 11px 14px;
+            border-radius: 10px;
+            border: 1px solid;
+        }
+
+        .ct-status.ok {
+            background: var(--okbg);
+            border-color: var(--ok);
+        }
+
+        .ct-status.err {
+            background: #fdecea;
+            border-color: var(--er);
+        }
+
+        @media(max-width: 760px) {
+            .hero.contact-hero {
+                padding: 30px 22px;
+            }
+
+            .contact-hero p {
+                font-size: 15px;
+            }
+
+            .ct-card {
+                padding: 20px 18px;
+            }
+        }
+

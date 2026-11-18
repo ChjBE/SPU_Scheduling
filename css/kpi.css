@@ -1,0 +1,55 @@
+        /* ---------- KPI ---------- */
+        .kpi {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 16px;
+            margin: 16px 0
+        }
+
+        .kpi>div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: var(--sf);
+            border: 1px solid var(--bd);
+            border-radius: 14px;
+            padding: 20px 14px;
+            color: var(--mu);
+            box-shadow: var(--sh)
+        }
+
+        .kpi b {
+            display: block;
+            font-size: 26px;
+            line-height: 1.2;
+            color: var(--tx);
+            margin-bottom: 2px;
+            letter-spacing: -.01em
+        }
+
+        .kpi b.ok {
+            color: var(--ok)
+        }
+
+        .kpi b.hi {
+            color: var(--hi)
+        }
+
+        .kpi b.over {
+            color: var(--er)
+        }
+
+        .ok {
+            color: var(--ok)
+        }
+
+        .hi {
+            color: var(--hi)
+        }
+
+        .over {
+            color: var(--er)
+        }
+

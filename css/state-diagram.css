@@ -1,0 +1,133 @@
+        /* ---------- State diagram SVG ---------- */
+        .sd {
+            width: 100%;
+            height: auto;
+            max-height: 250px;
+            display: block
+        }
+
+        .sd .nd {
+            fill: var(--sf);
+            stroke: var(--bd);
+            stroke-width: 1.2
+        }
+
+        .sd .nd.dash {
+            stroke-dasharray: 4 4
+        }
+
+        .sd text {
+            fill: var(--tx);
+            font-size: 10.5px;
+            font-weight: 600
+        }
+
+        .sd text.sub {
+            fill: var(--mu);
+            font-size: 10.5px;
+            font-weight: 400
+        }
+
+        .sd text.cn {
+            fill: var(--mu);
+            font-size: 11px;
+            font-weight: 700;
+            text-anchor: end
+        }
+
+        .sd text.cp {
+            fill: #fff;
+            font-size: 10.5px;
+            font-weight: 600;
+            text-anchor: middle
+        }
+
+        .sd .ar {
+            fill: none;
+            stroke: var(--mu);
+            stroke-width: 1.4;
+            opacity: .7
+        }
+
+        .sd .ar.dash {
+            stroke-dasharray: 3 3;
+            opacity: .45
+        }
+
+        .sd .ar.on {
+            stroke: var(--ac);
+            stroke-width: 2.6;
+            opacity: 1
+        }
+
+        .sd .mh {
+            fill: var(--mu)
+        }
+
+        .sd .mo {
+            fill: var(--ac)
+        }
+
+        .evl {
+            list-style: none;
+            margin: 14px 0 0;
+            padding: 12px 0 0;
+            border-top: 1px solid var(--bd);
+            display: grid;
+            gap: 6px;
+            font-size: 13px
+        }
+
+        .evl li {
+            display: flex;
+            align-items: center;
+            gap: 10px
+        }
+
+        .evl .tm {
+            min-width: 48px;
+            color: var(--mu);
+            font-variant-numeric: tabular-nums
+        }
+
+        .evl .pc {
+            display: inline-grid;
+            place-items: center;
+            min-width: 34px;
+            padding: 1px 8px;
+            border-radius: 6px;
+            color: #fff;
+            font-size: 12px;
+            font-weight: 600
+        }
+
+        .evl .st2 {
+            font-weight: 600
+        }
+
+        .evl .mu {
+            margin: 0
+        }
+
+        .note {
+            margin: 10px 0 0;
+            font-size: 12.5px
+        }
+
+        @media(max-width:900px) {
+            .ctl .cb label {
+                margin-left: 0
+            }
+        }
+
+        .fm {
+            display: grid;
+            gap: 12px;
+            max-width: 520px
+        }
+
+        .fm label {
+            display: grid;
+            gap: 4px
+        }
+

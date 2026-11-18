@@ -1,0 +1,115 @@
+        .ctl-dock {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: var(--nv);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border-top: 1px solid var(--bd);
+            box-shadow: 0 -4px 20px rgba(15, 30, 61, 0.12);
+            padding: 10px 20px calc(10px + env(safe-area-inset-bottom, 0px));
+        }
+
+        .ctl-dock-inner {
+            max-width: 1120px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .ctl-dock-row1 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px 16px;
+        }
+
+        .ctl-btn-group {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .ctl-status-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 13px;
+            color: var(--mu);
+            font-weight: 500;
+        }
+
+        .ctl-status-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--mu);
+            display: inline-block;
+            transition: background 0.2s, box-shadow 0.2s;
+        }
+
+        .ctl-status-dot.active {
+            background: var(--ok);
+            box-shadow: 0 0 8px rgba(22, 163, 74, 0.6);
+        }
+
+        .ctl-spd-wrap {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 13px;
+            color: var(--mu);
+        }
+
+        .ctl-dock-row2 {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .ctl-dock-row2 input[type=range] {
+            flex: 1;
+            min-width: 140px;
+            height: 6px;
+            accent-color: var(--ac);
+            cursor: pointer;
+        }
+
+        .ctl-time-badge {
+            font-weight: 600;
+            font-variant-numeric: tabular-nums;
+            color: var(--tx);
+            background: var(--ac2);
+            border: 1px solid var(--bd);
+            padding: 4px 12px;
+            border-radius: 6px;
+            font-size: 13px;
+            white-space: nowrap;
+        }
+
+        .has-dock {
+            padding-bottom: 130px !important;
+        }
+
+        .ctrl-bar-wrap {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 10px 16px;
+            width: 100%;
+        }
+
+        .ctrl-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 13.5px;
+            color: var(--tx);
+            white-space: nowrap;
+        }
+

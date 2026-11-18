@@ -1,0 +1,175 @@
+        /* ---------- Gantt & Timeline ---------- */
+        input[type=range] {
+            width: min(320px, 60%);
+            padding: 0;
+            vertical-align: middle;
+            accent-color: var(--ac)
+        }
+
+        input[type=checkbox] {
+            accent-color: var(--ac)
+        }
+
+        .gt-wrap {
+            position: relative;
+            margin-bottom: 8px;
+            background: var(--sf);
+            border: 1px solid var(--bd);
+            border-radius: 10px;
+            padding: 16px 14px 8px;
+        }
+
+        .gt-scroll {
+            overflow-x: auto;
+            scrollbar-width: thin;
+            padding-bottom: 4px;
+            position: relative;
+        }
+
+        .gt-inner {
+            position: relative;
+            padding-top: 10px;
+        }
+
+        .gt {
+            position: relative;
+            display: flex;
+            gap: 2px;
+            height: 48px;
+            margin-bottom: 28px
+        }
+
+        .sg {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 13px;
+            font-weight: 600;
+            border-radius: 6px;
+            min-width: 0;
+            user-select: none;
+            transition: opacity .15s, outline .15s, filter .15s;
+        }
+
+        .sg.idle {
+            background: repeating-linear-gradient(45deg, var(--bd), var(--bd) 6px, rgba(0, 0, 0, 0.03) 6px, rgba(0, 0, 0, 0.03) 12px) !important;
+            color: var(--mu) !important;
+            border: 1px dashed var(--bd);
+            font-weight: 500;
+            font-size: 11px;
+        }
+
+        .sg.active {
+            outline: 2.5px solid var(--ac);
+            outline-offset: 1px;
+            box-shadow: 0 0 12px rgba(37, 99, 235, .45);
+            z-index: 2;
+        }
+
+        .sg.future {
+            opacity: 0.38;
+            filter: saturate(60%);
+        }
+
+        .sg.past {
+            opacity: 1;
+        }
+
+        .sg small {
+            position: absolute;
+            bottom: -22px;
+            left: 0;
+            transform: translateX(-50%);
+            color: var(--mu);
+            font-size: 11px;
+            font-weight: 500
+        }
+
+        .sg:first-child small {
+            transform: none
+        }
+
+        .sg small.en {
+            left: auto;
+            right: 0;
+            transform: translateX(50%)
+        }
+
+        .gt-axis {
+            position: relative;
+            height: 20px;
+            border-top: 1px solid var(--bd);
+            margin-top: -6px;
+        }
+
+        .gt-tick {
+            position: absolute;
+            top: 0;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: var(--mu);
+            font-size: 10px;
+            pointer-events: none;
+        }
+
+        .gt-tick::before {
+            content: "";
+            width: 1px;
+            height: 4px;
+            background: var(--mu);
+            margin-bottom: 2px;
+        }
+
+        .gt-cur-line {
+            position: absolute;
+            top: 6px;
+            bottom: 24px;
+            width: 2px;
+            background: #ef4444;
+            z-index: 10;
+            pointer-events: none;
+            transition: left .08s ease-out;
+        }
+
+        .gt-cur-line::after {
+            content: "▼";
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 10px;
+            color: #ef4444;
+        }
+
+        .lgd {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px 14px;
+            margin-top: 8px;
+            font-size: 12.5px;
+            color: var(--mu)
+        }
+
+        .lgd span {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px
+        }
+
+        .lgd i {
+            width: 10px;
+            height: 10px;
+            border-radius: 3px;
+            display: block
+        }
+
+        .bt:disabled {
+            opacity: .45;
+            cursor: not-allowed;
+            filter: none
+        }
+

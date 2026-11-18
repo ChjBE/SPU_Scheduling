@@ -1,0 +1,28 @@
+        /* ---------- Gantt Zoom Buttons Spacing ---------- */
+        .gt-tb {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px 14px;
+            margin-bottom: 12px;
+            font-size: 13px;
+            color: var(--mu);
+        }
+
+        .gt-tb-btns {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            flex-wrap: wrap;
+        }
+
+        .gt-tb-btns .bt {
+            min-width: 32px;
+            padding: 3px 10px;
+            height: 28px;
+            font-size: 12.5px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+

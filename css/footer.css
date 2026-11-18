@@ -1,0 +1,98 @@
+        /* ---------- Fixed Bottom Footer ---------- */
+        footer {
+            position: relative;
+            background: var(--sf);
+            border-top: 1px solid var(--bd);
+            padding: 16px 20px calc(16px + env(safe-area-inset-bottom, 0px));
+            text-align: center;
+            color: var(--mu);
+            font-size: 13px;
+            line-height: 1.5;
+            margin-top: 40px;
+        }
+
+        footer .ft-wrap {
+            max-width: 1120px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 6px 18px;
+        }
+
+        footer .ft-copy {
+            color: var(--mu);
+        }
+
+        footer .ft-links {
+            display: inline-flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        footer a {
+            color: var(--ac);
+            cursor: pointer;
+            text-decoration: none;
+            transition: color .15s;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media(max-width: 680px) {
+            footer {
+                padding: 8px 12px calc(8px + env(safe-area-inset-bottom, 0px));
+                font-size: 12px;
+            }
+
+            footer .ft-wrap {
+                justify-content: center;
+                text-align: center;
+                gap: 4px 12px;
+            }
+        }
+
+        @media(max-width:760px) {
+            .hero {
+                grid-template-columns: 1fr;
+                padding: 32px 24px
+            }
+
+            .hv {
+                display: none
+            }
+
+            .hero h1 {
+                white-space: normal
+            }
+        }
+
+        @media(max-width:600px) {
+            .dk {
+                height: 460px
+            }
+
+            .se {
+                min-width: 0;
+                padding: 5px 12px
+            }
+
+            .se span {
+                display: none
+            }
+
+            .cl {
+                display: none
+            }
+        }
+
+        @media(prefers-reduced-motion:reduce) {
+            * {
+                transition: none !important
+            }
+        }
+
+

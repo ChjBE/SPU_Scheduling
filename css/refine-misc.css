@@ -1,0 +1,109 @@
+        /* ---------- Context Switch Block on Gantt Chart ---------- */
+        .sg.cs {
+            background: repeating-linear-gradient(-45deg, #f1f5f9, #f1f5f9 4px, #e2e8f0 4px, #e2e8f0 8px) !important;
+            color: #64748b !important;
+            border: 1px solid #cbd5e1 !important;
+            box-shadow: none;
+            font-weight: 600;
+            font-size: 10.5px;
+            letter-spacing: .03em;
+            cursor: pointer;
+            min-width: 0;
+        }
+
+        .sg.cs span {
+            background: none;
+            padding: 0;
+            border-radius: 0;
+            font-size: 10.5px;
+            white-space: nowrap;
+        }
+
+        .sg.cs:hover {
+            background: repeating-linear-gradient(-45deg, #e8eef6, #e8eef6 4px, #d6dfec 4px, #d6dfec 8px) !important;
+        }
+
+        /* ---------- Gantt: căn trục / con trỏ chính xác khi thu phóng ---------- */
+        .gt-track {
+            position: relative;
+        }
+
+        .gt-inner {
+            padding: 10px 14px 0;
+        }
+
+        .gt {
+            gap: 0;
+        }
+
+        .sg {
+            box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .75);
+            overflow: hidden;
+        }
+
+        /* Dòng trống của nhật ký trạng thái không bị ép vào cột 58px */
+        .evl li.mu {
+            display: block !important;
+            grid-template-columns: none !important;
+            background: transparent;
+            border: 0;
+        }
+
+        /* Tiêu đề trong khối hero (nền xanh đậm) phải là chữ trắng */
+        .hero h1 {
+            color: #fff !important;
+            font-size: clamp(28px, 3.4vw, 36px) !important;
+            line-height: 1.25 !important;
+            margin: 0 0 14px !important;
+        }
+
+        /* Bảng giải pháp: cho phép xuống dòng thay vì cuộn ngang */
+        .rec-table td,
+        .rec-table th {
+            white-space: normal;
+            vertical-align: top;
+        }
+
+        .rec-table td:first-child {
+            min-width: 190px;
+        }
+
+        .rec-table td:last-child {
+            white-space: nowrap;
+        }
+
+        /* Căn lề footer và thanh điều khiển khớp với nội dung trang (1080px) */
+        footer .ft-wrap,
+        .ctl-dock-inner {
+            max-width: 1080px;
+        }
+
+        footer {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        /* Chừa chỗ cho thanh điều khiển cố định ở cuối trang để không che footer */
+        body:has(.ctl-dock) footer {
+            margin-bottom: 118px;
+        }
+
+        /* ---------- State Diagram Stability & Fixed Height ---------- */
+        #sd {
+            display: block;
+        }
+
+        .evl {
+            height: 135px !important;
+            overflow-y: auto !important;
+            overflow-x: auto !important;
+            margin: 14px 0 0;
+            padding: 8px 12px;
+            background: var(--bg);
+            border: 1px solid var(--bd);
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            box-sizing: border-box;
+        }

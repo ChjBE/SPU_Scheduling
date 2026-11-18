@@ -1,0 +1,163 @@
+        /* ---------- Buttons & fields ---------- */
+        .bt,
+        button.bt {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            background: var(--bt);
+            color: #fff;
+            border: 0;
+            border-radius: 8px;
+            padding: 9px 18px;
+            font: inherit;
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+            transition: filter .15s, background .15s
+        }
+
+        .bt:hover {
+            filter: brightness(1.08)
+        }
+
+        .bt.g {
+            background: var(--ac2);
+            color: var(--ac)
+        }
+
+        .bt.sm {
+            padding: 6px 14px;
+            font-size: 13px
+        }
+
+        .bt.x {
+            padding: 6px 8px
+        }
+
+        .bt:focus-visible,
+        button:focus-visible,
+        input:focus-visible,
+        select:focus-visible,
+        textarea:focus-visible {
+            outline: 2px solid var(--ac);
+            outline-offset: 2px
+        }
+
+        input,
+        select,
+        textarea {
+            font: inherit;
+            background: var(--sf);
+            color: var(--tx);
+            border: 1px solid var(--bd);
+            border-radius: 8px;
+            padding: 7px 10px;
+            max-width: 100%
+        }
+
+        table input {
+            width: 64px
+        }
+
+        .bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-items: center;
+            margin: 14px 0
+        }
+
+        .sc {
+            overflow-x: auto;
+            scrollbar-width: thin
+        }
+
+        /* ---------- Table ---------- */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            background: var(--sf);
+            border: 1px solid var(--bd);
+            border-radius: 12px;
+            overflow: hidden
+        }
+
+        th,
+        td {
+            padding: 10px 14px;
+            border-bottom: 1px solid var(--bd);
+            text-align: left;
+            white-space: nowrap
+        }
+
+        th {
+            background: var(--ac2);
+            font-weight: 600;
+            font-size: 13.5px;
+            color: var(--tx)
+        }
+
+        tr:last-child td {
+            border-bottom: 0
+        }
+
+        tr.tr-active {
+            background: var(--ac2) !important;
+            font-weight: 600
+        }
+
+        td.bst {
+            color: var(--ok);
+            font-weight: 700
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 2px 10px;
+            border-radius: 999px;
+            font-size: 12px;
+            font-weight: 600;
+            color: #fff
+        }
+
+        .tag.cpu {
+            background: #2563eb;
+        }
+
+        .tag.io {
+            background: #0d9488;
+        }
+
+        .tag.hh {
+            background: #7c3aed;
+        }
+
+        .tag.new {
+            background: #7c8aa5;
+        }
+
+        .tag.ready {
+            background: #2563eb;
+        }
+
+        .tag.running {
+            background: #16a34a;
+        }
+
+        .tag.waiting {
+            background: #d97706;
+        }
+
+        .tag.terminated {
+            background: #64748b;
+        }
+
+        .tag.r {
+            background: #2563eb;
+        }
+
+        .tag.t {
+            background: #64748b;
+        }
+
